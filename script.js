@@ -4,7 +4,7 @@ function selectOption(option) {
         
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none';
-            displayMilkHu ();
+            displayMilkHug();
         });
     } else if (option === 'no') {
         
@@ -41,14 +41,14 @@ function displayMilkSquish() {
     
     var imageContainer = document.getElementById('image-container');
     
-    var milkImage = new Image();
+    var squishImage = new Image();
     
-    milkImage.src = 'MilkSquish.gif';
+    squishImage.src = 'MilkSquish.gif';
     
-    milkImage.alt = 'Milk Squish Mocha';
+    squishImage.alt = 'Milk Squish Mocha';
     
-    milkImage.onload = function() {
-        imageContainer.appendChild(milkImage);
+    squishImage.onload = function() {
+        imageContainer.appendChild(squishImage);
     };
 }
 
@@ -71,6 +71,6 @@ function displayMilkHug() {
     };
 }
 
-
 displayMilkSquish();
+
 
