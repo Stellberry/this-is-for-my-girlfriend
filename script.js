@@ -1,13 +1,13 @@
 function selectOption(option) {
     
     if (option === 'yes') {
-        
+       
         flashRainbowColors(function() {
-            document.getElementById('question').style.display = 'none';
-            displayMilkHug();
+            document.getElementById('question').style.display = 'none'; // Hide the question
+            displayHug();
         });
     } else if (option === 'no') {
-        
+       
         document.getElementById('no-button').innerText = 'You sure?'; 
         
         var yesButton = document.getElementById('yes-button');
@@ -37,23 +37,25 @@ function flashRainbowColors(callback) {
     }, 2000);
 }
 
-function displayMilkSquish() {
+
+function displaySquish() {
     
     var imageContainer = document.getElementById('image-container');
     
     var squishImage = new Image();
     
     squishImage.src = 'MilkSquish.gif';
-    
-    squishImage.alt = 'Milk Squish Mocha';
+
+    squishImage.alt = 'Squish';
     
     squishImage.onload = function() {
         imageContainer.appendChild(squishImage);
     };
 }
 
-function displayMilkHug() {
-   
+
+function displayHug() {
+    
     document.getElementById('image-container').innerHTML = '';
     
     var imageContainer = document.getElementById('image-container');
@@ -61,8 +63,8 @@ function displayMilkHug() {
     var hugImage = new Image();
     
     hugImage.src = 'MilkHug.gif'; 
-   
-    hugImage.alt = 'Milk Hug Mocha';
+    
+    hugImage.alt = 'Hug';
     
     hugImage.onload = function() {
         imageContainer.appendChild(hugImage);
@@ -71,6 +73,5 @@ function displayMilkHug() {
     };
 }
 
-displayMilkSquish();
 
-
+displaySquish();
