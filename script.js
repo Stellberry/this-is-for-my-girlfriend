@@ -4,7 +4,7 @@ function selectOption(option) {
         
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none';
-            displayMilkHug();
+            displayMilkHu ();
         });
     } else if (option === 'no') {
         
@@ -45,7 +45,7 @@ function displayMilkSquish() {
     
     milkImage.src = 'MilkSquish.gif';
     
-    milkImage.alt = 'Milk';
+    milkImage.alt = 'Milk Squish Mocha';
     
     milkImage.onload = function() {
         imageContainer.appendChild(milkImage);
@@ -73,3 +73,4 @@ function displayMilkHug() {
 
 
 displayMilkSquish();
+
