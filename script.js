@@ -43,9 +43,9 @@ function displayMilkSquish() {
     
     var milkImage = new Image();
     
-    milkImage.src = 'MilkHug.gif';
+    milkImage.src = 'MilkSquish.gif';
     
-    milkImage.alt = 'Cat';
+    milkImage.alt = 'Milk';
     
     milkImage.onload = function() {
         imageContainer.appendChild(milkImage);
@@ -71,5 +71,5 @@ function displayMilkHug() {
     };
 }
 
-// Display the cat.gif initially
+
 displayMilkSquish();
